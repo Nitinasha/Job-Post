@@ -1,0 +1,228 @@
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css";
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+}
+
+.txt-light {
+  color: #e3efff;
+}
+
+.txt-gray {
+  color: #e8e8e8;
+}
+
+.txt-dark-blue {
+  color: #003471;
+}
+
+.fs-14 {
+  font-size: 14px;
+}
+
+.fs-12 {
+  font-size: 12px;
+}
+
+.bg-gray {
+  background-color: #e8e8e8;
+}
+
+.bg-Primary {
+  background-color: #003471;
+}
+
+.navbar {
+  background-color: #e3efff;
+}
+.navbar .nav-link {
+  color: #003471;
+}
+
+.nav-item {
+  text-align: center;
+  line-height: 40px !important;
+}
+
+.navbar-toggler:focus {
+  border: none;
+  box-shadow: none;
+  outline: none;
+}
+
+.navbar-toggler i {
+  color: #003471;
+}
+
+.btn-login, .btn-signup {
+  color: #e3efff;
+  background-color: #003471;
+  border-radius: 5px;
+  border: 0;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.btn-login:hover, .btn-signup:hover {
+  color: #e3efff;
+  background-color: #0d62ca;
+}
+
+.btn-download {
+  color: #003471;
+  border: 2px solid #003471;
+  border-radius: 5px;
+}
+
+.btn-download:hover {
+  color: #e3efff;
+  border: 1px solid #003471;
+  border-radius: 5px;
+  background-color: #003471;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #e3efff;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background: #003471;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.hero-sec {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.731), rgba(0, 0, 0, 0.896)), url(../Images/Hero.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.hero-sec .hero-heading {
+  font-size: 25px;
+}
+.hero-sec .glass {
+  background-color: rgba(8, 8, 8, 0.357);
+  border-radius: 5px;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+}
+
+.otp {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.inputs input {
+  width: 30px;
+  height: 30px;
+}
+
+.form-control:focus {
+  box-shadow: none;
+  border: 2px solid red;
+}
+
+.drop-btn {
+  width: 280px !important;
+}
+
+.input-filters {
+  width: 70px;
+  height: 32px;
+}
+
+.dropdown-toggle::after {
+  display: inline-block;
+  margin-left: 7.55em;
+  vertical-align: 0.255em;
+  content: "";
+  border-top: 0.3em solid;
+  border-right: 0.3em solid transparent;
+  border-bottom: 0;
+  border-left: 0.3em solid transparent;
+}
+
+.input-filters:focus {
+  border: none;
+  box-shadow: none;
+  outline: none;
+}
+
+.filter-input-box {
+  overflow-x: auto;
+}
+.filter-input-box .filter-input {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 36px;
+  white-space: nowrap;
+}
+
+.job-card .card-tags {
+  padding: 3px 8px;
+  font-size: 12px;
+  font-weight: bold;
+  background-color: #e8e8e8;
+  color: rgb(46, 46, 46) !important;
+  border-radius: 16px;
+  white-space: nowrap;
+  margin: 4px;
+}
+.job-card .card-btn {
+  background-color: #003471;
+  color: #e3efff;
+}
+.job-card .card-btn:hover {
+  background-color: #0d62ca;
+  color: #e3efff;
+}
+
+@media (min-width: 992px) {
+  .hero-sec {
+    height: 550px;
+  }
+  .hero-heading {
+    font-size: 45px !important;
+    font-weight: 600;
+  }
+  .inputs input {
+    width: 40px;
+    height: 40px;
+  }
+  .form-control:focus {
+    box-shadow: none;
+    border: 2px solid #003471;
+  }
+  .input-filters {
+    width: 150px;
+    height: 32px;
+  }
+  .dropdown-toggle::after {
+    display: inline-block;
+    margin-left: 6em;
+    vertical-align: 0.255em;
+    content: "";
+    border-top: 0.3em solid;
+    border-right: 0.3em solid transparent;
+    border-bottom: 0;
+    border-left: 0.3em solid transparent;
+  }
+}/*# sourceMappingURL=main.css.map */

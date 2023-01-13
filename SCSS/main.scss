@@ -1,0 +1,271 @@
+
+@import "../SCSS/_variables.scss";
+@import "../SCSS/_links.scss";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+a{
+    text-decoration: none;
+}
+
+///////////////////////////////////// text-color
+
+.txt-light{
+    color: $Third-color;
+}
+.txt-gray{
+  color: $Gray-color;  
+}
+.txt-dark-blue{
+    color: $Primary-color;
+}
+
+
+///////////////////////////////////// fontsize
+
+.fs-14{
+    font-size: 14px;
+}
+.fs-12{
+    font-size: 12px;
+}
+
+
+//////////////////////////////////////// Bckground color
+
+
+.bg-gray{
+   background-color:  $Gray-color ;
+}
+.bg-Primary{
+    background-color: $Primary-color;
+}
+
+
+.navbar {
+   background-color: $Third-color ;
+
+
+
+   & .nav-link{
+    color: $Primary-color;
+   }
+}
+.nav-item{
+   text-align: center;
+   line-height: 40px !important;
+}
+.navbar-toggler:focus{
+    border: none;
+    box-shadow: none;
+    outline: none;
+
+    
+}
+
+.navbar-toggler{
+    i {
+        color: $Primary-color;
+    }
+}
+
+.btn-login ,.btn-signup{
+
+    
+    color: $Third-color;
+    background-color: $Primary-color;
+    border-radius: 5px;
+    border: 0;
+   
+    text-decoration: none;
+    font-weight: 500;
+}
+.btn-login:hover ,.btn-signup:hover{   
+    color: $Third-color;
+    background-color: $Secondary-color;    
+}
+.btn-download {
+    color: $Primary-color;
+    border: 2px solid $Primary-color;
+    border-radius: 5px ;
+}
+
+.btn-download:hover {
+    color:$Third-color;
+    border: 1px solid $Primary-color;
+    border-radius: 5px ;
+    background-color: $Primary-color;    
+}
+
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+/* Track */                                                                                                                                                                                                   
+::-webkit-scrollbar-track {
+    background: $Third-color; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+      border-radius: 5px;
+    background: $Primary-color; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+
+.hero-sec{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.731),rgba(0, 0, 0, 0.896)), url(../Images/Hero.jpg) ;
+    
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+    // height: 600px;
+    .hero-heading{
+        font-size: 25px;
+    }
+
+    .glass {
+        background-color: rgba(8, 8, 8, 0.357);
+       
+        border-radius: 5px;
+        backdrop-filter: blur(5px);
+ 
+    
+    }
+}
+.otp{
+    width: 100%;
+    margin: 0 auto;
+
+}
+.inputs input {
+    width: 30px;
+    height: 30px
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border: 2px solid red
+}
+.drop-btn{
+    width: 280px !important;
+}
+
+.input-filters{
+    width:70px;
+    height: 32px;
+    
+}
+.dropdown-toggle::after {
+    display: inline-block;
+    margin-left: 7.55em;
+    vertical-align: 0.255em;
+    content: "";
+    border-top: 0.3em solid;
+    border-right: 0.3em solid transparent;
+    border-bottom: 0;
+    border-left: 0.3em solid transparent;
+}
+
+
+.input-filters:focus{
+    border: none;
+    box-shadow: none;
+    outline: none;
+
+}
+
+.filter-input-box{
+   
+    overflow-x: auto;
+  
+
+    .filter-input{
+        width: fit-content;
+        height: 36px;
+        white-space: nowrap;
+    }
+}
+
+.job-card{
+
+
+     .card-tags{
+
+        padding: 3px 8px;
+        font-size: 12px;
+        font-weight: bold;
+        background-color:$Gray-color;
+        color:  rgb(46, 46, 46) !important ;
+        border-radius: 16px;
+        white-space: nowrap;
+        margin: 4px;
+        
+    }
+
+    .card-btn{
+        background-color: $Primary-color;
+        color: $Third-color;
+    }
+    .card-btn:hover {
+        background-color: $Secondary-color;
+        color: $Third-color;
+    }
+
+}
+
+
+@media (min-width: 992px){
+
+    .hero-sec{
+        height: 550px;
+    }
+
+    .hero-heading{
+        font-size: 45px !important;
+        font-weight: 600;
+    }
+
+    .inputs input {
+        width: 40px;
+        height: 40px;
+       
+    }
+    
+    .form-control:focus {
+        box-shadow: none;
+        border: 2px solid $Primary-color
+    }
+    
+
+    .input-filters{
+        width:150px;
+        height: 32px;
+        
+    }
+    .dropdown-toggle::after {
+        display: inline-block;
+        margin-left: 6em;
+        vertical-align: 0.255em;
+        content: "";
+        border-top: 0.3em solid;
+        border-right: 0.3em solid transparent;
+        border-bottom: 0;
+        border-left: 0.3em solid transparent;
+    }
+
+
+}

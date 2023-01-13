@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="Images/WebIcon.png">
+
+
+
+
+  <!-- Bootstrap -->
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="SCSS/main.css">
+
+  <title>Jobs Here</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg p-0 ">
+      <div class="container justify-content-around justify-content-lg-between">
+        <a class="navbar-brand " href="#"><img src="images/Logo.png" alt="Job post"></a>
+
+        <div class="collapse navbar-collapse " id="navbarTogglerDemo01">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 justify-content-evenly align-items-center w-100">
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page" href="#">Home <i class="fa-solid fa-chevron-down"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page" href="#">Jobs <i class="fa-solid fa-chevron-down"></i></a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page" href="#">About <i class="fa-solid fa-chevron-down"></i></a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page" href="#">Contact <i class="fa-solid fa-chevron-down"></i></a>
+            </li>
+            <li class="nav-item ">
+              <!-- <a class="btn-login btn-lg " href="#" data-bs-toggle="modal" data-bs-target="#LoginForm">Login</a> -->
+              <a class="btn btn-primary btn-md " href="#" data-bs-toggle="modal" data-bs-target="#LoginForm">Login</a>
+
+            </li>
+            <li class="nav-item ">
+              <a class="btn btn-primary btn-md " href="#" data-bs-toggle="modal" data-bs-target="#signUPForm">Sign
+                Up</a>
+            </li>
+            <li class="nav-item ">
+              <a class="btn btn-primary btn-md " href="#" data-bs-toggle="modal" data-bs-target="#signUPForm">Download
+                App</a>
+            </li>
+
+
+
+          </ul>
+
+        </div>
+        <!-- <div>
+                    <a class="btn-login " href="#" data-bs-toggle="modal" data-bs-target="#LoginForm">Login</a>
+
+                    <a class="btn-signup " href="#">Sign Up</a>
+
+
+                  </div> -->
+        <div class="">
+
+          <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <div class="modal fade" id="LoginForm" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog  ">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Login</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <!-- Email input -->
+                    <div class="form-outline mb-2">
+                      <label class="form-label" for="form1Example13">Email address</label>
+                      <input type="email" id="form1Example13" class="form-control form-control-lg" />
+                    </div>
+
+                    <!-- Password input -->
+                    <div class="form-outline mb-2">
+                      <label class="form-label" for="form1Example23">Password</label>
+                      <input type="password" id="form1Example23" class="form-control form-control-lg" />
+                    </div>
+
+                    <div class="d-flex justify-content-around align-items-center mb-2 ">
+                      <!-- Checkbox -->
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="form1Example3" checked />
+                        <label class="form-check-label" for="form1Example3"> Remember me </label>
+                      </div>
+                      <a href="#!">Forgot password?</a>
+                    </div>
+
+                    <!-- Submit button -->
+                    <div class="text-center">
+                      <button type="submit" class="btn-lg btn-block btn-signup">Sign in</button>
+
+                      <div class="divider d-flex align-items-center my-2">
+                        <p class="text-center fw-bold mx-3 mb-0 text-muted mx-auto">OR</p>
+                      </div>
+
+                      <a class="btn  btn-md btn-block my-2 txt-light" style="background-color: #0f3b9b" href="#!"
+                        role="button">
+                        <i class="fab fa-facebook-f me-2 txt-light "></i>Continue with Facebook
+                      </a>
+                      <a class="btn  btn-md btn-block my-2 txt-light" style="background-color: #55acee" href="#!"
+                        role="button">
+                        <i class="fab fa-twitter me-2 txt-light"></i>Continue with Twitter</a>
+                    </div>
+
+                  </form>
+                </div>
+
+
+
+              </div>
+            </div>
+          </div>
+
+
+
+
+        </div>
+      </div>
+      </div>
+      </div>
+      </div>
+    </nav>
+    <section class="hero-sec p-4 ">
+      <div class="glass container p-0 py-2 ">
+        <div class="row justify-content-center align-items-center m-4">
+          <div class="col-md p-0 ">
+            <p class="txt-light hero-heading ">Talk to HR directly & get a job with better salary!</p>
+            <p class="txt-gray ">Get local jobs in your city! <i
+                class="fa-regular fa-hand-point-right ps-3 text-warning"></i></p>
+          </div>
+          <div class="col-md p-0">
+
+            <div class="bg-light p-3 rounded">
+              <h4 class="">Enter Your Number To Continue</h4>
+
+              <div class="mb-3">
+                <label for="formGroupExampleInput" class="form-label">Mobile Number
+                </label>
+                <input type="text" class="form-control" id="formGroupExampleInput"
+                  placeholder="Enter mobile number to get otp">
+              </div>
+
+              <div class="mb-3 text-center">
+
+                <a type="submit" class="btn-lg py-1 px-3 btn-signup rounded-4" >Send</a>
+
+              </div>
+              <div class="mb-3 ">
+                <label for="formGroupExampleInput" class="form-label">Enter otp sent to your mobile
+                </label>
+                <div  class="otp inputs d-flex flex-row justify-content-evenly mt-2 ">
+                  <input class="m-2 text-center form-control rounded" type="number"  maxlength="1" />
+                  <input class="m-2 text-center form-control rounded" type="number"  maxlength="1" />
+                  <input class="m-2 text-center form-control rounded" type="number"  maxlength="1" />
+                  <input class="m-2 text-center form-control rounded" type="number"  maxlength="1" />
+                  <input class="m-2 text-center form-control rounded d-none d-md-block" type="number"  maxlength="1" />
+                  <input class="m-2 text-center form-control rounded d-none d-md-block" type="number"  maxlength="1" />
+                </div>
+                
+              </div>
+              <div class="mb-3 text-center">
+
+                <a type="submit" class="btn-lg py-1 px-3 btn-signup rounded-4" href="jobs.html" target="_self">Submit</a>
+
+
+                <div class="text-center">
+                  <p class="fs-12 m-0">I agree to <span class="txt-dark-blue">Terms & Conditions</span> & <span
+                      class="txt-dark-blue"> Privacy Policy </span> of Job Hunt</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+       
+    </section>
+
+  </header>
+
+
+
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+
+  <script>
+
+  </script>
+
+
+</body>
+
+</html>

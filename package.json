@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "node-sass": "^8.0.0",
+    "sass": "^1.57.1"
+  },
+  "name": "job-post",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

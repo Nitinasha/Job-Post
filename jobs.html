@@ -1,0 +1,1840 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <link rel="icon" href="Images/WebIcon.png">
+
+
+
+
+
+  <!-- Bootstrap -->
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+
+
+  <link rel="stylesheet" href="SCSS/owl.carousel.min.css">
+  <link rel="stylesheet" href="SCSS/owl.theme.default.min.css">
+
+  <link rel="stylesheet" href="SCSS/main.css">
+
+  <title>Jobs Here</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg p-0 ">
+      <div class="container justify-content-around justify-content-lg-between">
+        <a class="navbar-brand " href="#"><img src="images/Logo.png" alt="Job post"></a>
+
+        <div class="collapse navbar-collapse " id="navbarTogglerDemo01">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 justify-content-evenly align-items-center w-100">
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page" href="#">Home <i class="fa-solid fa-chevron-down"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page" href="#">Jobs <i class="fa-solid fa-chevron-down"></i></a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page" href="#">About <i class="fa-solid fa-chevron-down"></i></a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page" href="#">Contact <i class="fa-solid fa-chevron-down"></i></a>
+            </li>
+
+            <li class="nav-item ">
+              <a class="btn btn-download btn-md " data-bs-toggle="modal" data-bs-target="#signUPForm">Download
+                App</a>
+            </li>
+            <li class="nav-item ">
+              <!-- <a class="btn-login btn-lg " href="#" data-bs-toggle="modal" data-bs-target="#LoginForm">Login</a> -->
+              <a class="btn btn-login btn-md " href="Index.html" target="_self">Logout</a>
+
+            </li>
+            <li class="nav-item">
+              <button class="btn btn-outline-warning" data-bs-dismiss="navbar" data-bs-toggle="modal" data-bs-target="#Add-Job-Post">Post</button>
+            </li>
+
+
+
+          </ul>
+
+        </div>
+        <div>
+          <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+        <!-- <div>
+                    <a class="btn-login " href="#" data-bs-toggle="modal" data-bs-target="#LoginForm">Login</a>
+
+                    <a class="btn-signup " href="#">Sign Up</a>
+
+
+                  </div> -->
+
+      </div>
+
+    </nav>
+
+
+
+    <section class="sec1 bg-Primary">
+      <div class="container mx-auto py-3">
+        <div class="d-md-flex justify-content-md-around align-items-center  ">
+          <div class="bg-white py-2 px-3 rounded-pill my-2">
+            <div class="d-flex align-items-center justify-content-md-around">
+              <span><i class="fa-solid fa-suitcase me-2"></i></span>
+              <span>Job Type - </span>
+              <span>
+                <div class="dropdown bg-white ">
+                  <button class="btn  bg-white  dropdown-toggle input-filters  justify-content-between " type="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    All
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li class="mx-2">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Default checkbox
+                        </label>
+                      </div>
+                    </li>
+                    <li class="mx-2">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Default checkbox
+                        </label>
+                      </div>
+                    </li>
+                    <li class="mx-2">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Default checkbox
+                        </label>
+                      </div>
+                    </li>
+
+                  </ul>
+                </div>
+              </span>
+            </div>
+          </div>
+          <div class="bg-white py-2 px-3 rounded-pill my-2">
+            <div class="d-flex align-items-center justify-content-md-around">
+              <span><i class="fa-solid fa-location-dot me-2"></i></span>
+              <span> Location - </span>
+              <span>
+                <div class="dropdown bg-white ">
+                  <button class="btn  bg-white  dropdown-toggle input-filters  justify-content-between " type="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    All
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li class="mx-2">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" required>
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Pune
+                        </label>
+                      </div>
+                    </li>
+                    <li class="mx-2">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" required>
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Mumbai
+                        </label>
+                      </div>
+                    </li>
+                    <li class="mx-2">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" required>
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Nashik
+                        </label>
+                      </div>
+                    </li>
+
+                  </ul>
+                </div>
+              </span>
+            </div>
+
+
+          </div>
+          <div class="bg-white py-2 px-3 rounded-pill my-2">
+            <div class="d-flex align-items-center justify-content-md-around">
+              <span><i class="fa-solid fa-suitcase me-2"></i></span>
+              <span>Job Type - </span>
+              <span>
+                <div class="dropdown bg-white ">
+                  <button class="btn  bg-white  dropdown-toggle input-filters  justify-content-between " type="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    All
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li class="mx-2">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Default checkbox
+                        </label>
+                      </div>
+                    </li>
+                    <li class="mx-2">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Default checkbox
+                        </label>
+                      </div>
+                    </li>
+                    <li class="mx-2">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Default checkbox
+                        </label>
+                      </div>
+                    </li>
+
+                  </ul>
+                </div>
+              </span>
+            </div>
+          </div>
+
+    </section>
+    <section class="bg-gray ">
+      <div class="container  pt-2 pb-3 d-flex justify-content-between filter-input-box">
+        <a class="btn bg-white rounded-pill border border-1 filter-input" data-bs-toggle="offcanvas"
+          href="#offcanvasExample " role="button" aria-controls="offcanvasExample">
+          All fillters (12)
+        </a>
+
+        <a class="btn bg-white rounded-pill border border-1 filter-input" data-bs-toggle="offcanvas" href=" "
+          role="button"> <i class="fa-solid fa-house-user"></i>
+          Work From Home
+        </a>
+
+        <a class="btn bg-white rounded-pill border border-1 filter-input" data-bs-toggle="offcanvas" href=" "
+          role="button"><i class="fa-brands fa-paypal"></i>
+          Part Time
+        </a>
+
+        <a class="btn bg-white rounded-pill border border-1 filter-input" data-bs-toggle="offcanvas" href=" "
+          role="button"> <i class="fa-solid fa-star-and-crescent"></i>
+          Night Shift
+        </a>
+
+        <a class="btn bg-white rounded-pill border border-1 filter-input" data-bs-toggle="offcanvas" href=" "
+          role="button"> <i class="fa-solid fa-venus"></i>
+          Jobs for women
+        </a>
+
+        <a class="btn bg-white rounded-pill border border-1 filter-input" data-bs-toggle="offcanvas" href=" "
+          role="button"> <i class="fa-solid fa-suitcase"></i>
+          Jobs For Freshers
+        </a>
+
+
+
+
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+          aria-labelledby="offcanvasExampleLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title txt-dark-blue ">All Fillters</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <div class="d-flex align-items-start">
+              <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill"
+                  data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home"
+                  aria-selected="true">Home</button>
+                <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill"
+                  data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile"
+                  aria-selected="false">Company</button>
+                <button class="nav-link" id="v-pills-disabled-tab" data-bs-toggle="pill"
+                  data-bs-target="#v-pills-disabled" type="button" role="tab" aria-controls="v-pills-disabled"
+                  aria-selected="false">Education</button>
+                <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill"
+                  data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages"
+                  aria-selected="false">Messages</button>
+                <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill"
+                  data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings"
+                  aria-selected="false">Settings</button>
+              </div>
+              <div class="tab-content" id="v-pills-tabContent">
+                <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
+                  aria-labelledby="v-pills-home-tab" tabindex="0">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Default checkbox
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Default checkbox
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Default checkbox
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Default checkbox
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Default checkbox
+                    </label>
+                  </div>
+
+                </div>
+                <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab"
+                  tabindex="0">
+                  <div class="">
+                    <div class="input-group rounded">
+                      <input type="search" class="form-control " placeholder="Search" aria-label="Search"
+                        aria-describedby="search-addon" />
+                      <span class="input-group-text border-0" id="search-addon">
+                        <i class="fa fa-search"></i>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Tata Group
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Kirloskar
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Godrej Group
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Larsen and Toubro
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Thermax
+                    </label>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="v-pills-disabled" role="tabpanel" aria-labelledby="v-pills-disabled-tab"
+                  tabindex="0">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="">
+                    <label class="form-check-label" for="flexCheckDefault">
+
+                      Compuage Infocom Ltd
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="">
+                    <label class="form-check-label" for="flexCheckDefault">
+
+                      Hexaware Technologies Ltd
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="">
+                    <label class="form-check-label" for="flexCheckDefault">
+
+                      Larsen & Toubro Infotech Ltd (LTI)
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="">
+                    <label class="form-check-label" for="flexCheckDefault">
+
+                      Oracle Financial Services Software Ltd
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="">
+                    <label class="form-check-label" for="flexCheckDefault">
+
+                      Tata Consultancy Services Ltd (TCS)
+                    </label>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab"
+                  tabindex="0">4</div>
+                <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab"
+                  tabindex="0">5</div>
+              </div>
+            </div>
+          </div>
+          <div class="p-3 ">
+            <div class="d-flex justify-content-between">
+              <button class="btn btn-dark">Clear Fillters</button>
+              <button class="btn btn-info ">Apply</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--------------------------------------------------------------------------------row-one -->
+
+    <section class="container pt-3 row-One">
+      <div>
+        <p>All Jobs <i class="fa-solid fa-chevron-right"></i></p>
+        <h5>Jobs in India</h5>
+      </div>
+      <div class="owl-last owl-carousel owl-theme ">
+        <div class="">
+          <div class="card job-card">
+            <div class="card-header bg-Primary d-flex align-items-center justify-content-between">
+
+              <h5 class="m-0 text-white">Python Developer
+              </h5>
+              <p class="  m-0 text-white">50,000/- to 80,000/-</p>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Aptological pvt.ltd</h5>
+              <div class="row justify-content-between">
+                <div class="col-9 d-flex flex-wrap justify-content-start">
+                  <span class="card-tags"><i class="fa-solid fa-house-user pe-2"></i>Pune</span>
+                  <span class="card-tags"><i class="fa-brands fa-paypal pe-2"></i>2 Opening</span>
+                  <span class="card-tags"><i class="fa-solid fa-user-graduate pe-2"></i>Post Graduate</span>
+                  <span class="card-tags"><i class="fa-solid fa-sun pe-2"></i>For Freshers </span>
+                </div>
+                <div class="col-3">
+
+                  <i class="fa-solid fa-house-user  txt-dark-blue fs-4"></i>
+                  <i class="fa-brands fa-paypal txt-dark-blue fs-4"></i>
+                  <i class="fa-solid fa-star-and-crescent txt-dark-blue fs-4"></i>
+                  <i class="fa-solid fa-venus txt-dark-blue fs-4"></i>
+
+                </div>
+              </div>
+              <div class="pt-1 ">
+                <button class="btn bg-Primary text-light card-btn mx-1">Apply Now</button>
+                <button class="btn bg-Primary text-light card-btn mx-1">Save for Later</button>
+              </div>
+            </div>
+            <div class="col-lg pt-lg-0 pb-2 d-flex justify-content-center align-items-center">
+              <h6 class="m-0 me-5  "> <span class="text-success rounded-circle "><i class="fa-solid fa-circle"></i>
+                </span> Actively recruiting</h6>
+              <i class="fa-solid fa-share-nodes fa-lg txt-dark-blue"></i>
+            </div>
+          </div>
+        </div>
+        <div class="">
+          <div class="card job-card">
+            <div class="card-header bg-Primary d-flex align-items-center justify-content-between">
+
+              <h5 class="m-0 text-white">Python Developer
+              </h5>
+              <p class="  m-0 text-white">50,000/- to 80,000/-</p>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Aptological pvt.ltd</h5>
+              <div class="row justify-content-between">
+                <div class="col-9 d-flex flex-wrap justify-content-start">
+                  <span class="card-tags"><i class="fa-solid fa-house-user pe-2"></i>Pune</span>
+                  <span class="card-tags"><i class="fa-brands fa-paypal pe-2"></i>2 Opening</span>
+                  <span class="card-tags"><i class="fa-solid fa-user-graduate pe-2"></i>Post Graduate</span>
+                  <span class="card-tags"><i class="fa-solid fa-sun pe-2"></i>For Freshers </span>
+                </div>
+                <div class="col-3">
+
+                  <i class="fa-solid fa-house-user  txt-dark-blue fs-4"></i>
+                  <i class="fa-brands fa-paypal txt-dark-blue fs-4"></i>
+                  <i class="fa-solid fa-star-and-crescent txt-dark-blue fs-4"></i>
+                  <i class="fa-solid fa-venus txt-dark-blue fs-4"></i>
+
+                </div>
+              </div>
+              <div class="pt-1 ">
+                <button class="btn bg-Primary text-light card-btn mx-1">Apply Now</button>
+                <button class="btn bg-Primary text-light card-btn mx-1">Save for Later</button>
+              </div>
+            </div>
+            <div class="col-lg pt-lg-0 pb-2 d-flex justify-content-center align-items-center">
+              <h6 class="m-0 me-5  "> <span class="text-success rounded-circle "><i class="fa-solid fa-circle"></i>
+                </span> Actively recruiting</h6>
+              <i class="fa-solid fa-share-nodes fa-lg txt-dark-blue"></i>
+            </div>
+          </div>
+        </div>
+        <div class="">
+          <div class="card job-card">
+            <div class="card-header bg-Primary d-flex align-items-center justify-content-between">
+
+              <h5 class="m-0 text-white">Python Developer
+              </h5>
+              <p class="  m-0 text-white">50,000/- to 80,000/-</p>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Aptological pvt.ltd</h5>
+              <div class="row justify-content-between">
+                <div class="col-9 d-flex flex-wrap justify-content-start">
+                  <span class="card-tags"><i class="fa-solid fa-house-user pe-2"></i>Pune</span>
+                  <span class="card-tags"><i class="fa-brands fa-paypal pe-2"></i>2 Opening</span>
+                  <span class="card-tags"><i class="fa-solid fa-user-graduate pe-2"></i>Post Graduate</span>
+                  <span class="card-tags"><i class="fa-solid fa-sun pe-2"></i>For Freshers </span>
+                </div>
+                <div class="col-3">
+
+                  <i class="fa-solid fa-house-user  txt-dark-blue fs-4"></i>
+                  <i class="fa-brands fa-paypal txt-dark-blue fs-4"></i>
+                  <i class="fa-solid fa-star-and-crescent txt-dark-blue fs-4"></i>
+                  <i class="fa-solid fa-venus txt-dark-blue fs-4"></i>
+
+                </div>
+              </div>
+              <div class="pt-1 ">
+                <button class="btn bg-Primary text-light card-btn mx-1">Apply Now</button>
+                <button class="btn bg-Primary text-light card-btn mx-1">Save for Later</button>
+              </div>
+            </div>
+            <div class="col-lg pt-lg-0 pb-2 d-flex justify-content-center align-items-center">
+              <h6 class="m-0 me-5  "> <span class="text-success rounded-circle "><i class="fa-solid fa-circle"></i>
+                </span> Actively recruiting</h6>
+              <i class="fa-solid fa-share-nodes fa-lg txt-dark-blue"></i>
+            </div>
+          </div>
+        </div>
+        <div class="">
+          <div class="card job-card">
+            <div class="card-header bg-Primary d-flex align-items-center justify-content-between">
+
+              <h5 class="m-0 text-white">Python Developer
+              </h5>
+              <p class="  m-0 text-white">50,000/- to 80,000/-</p>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Aptological pvt.ltd</h5>
+              <div class="row justify-content-between">
+                <div class="col-9 d-flex flex-wrap justify-content-start">
+                  <span class="card-tags"><i class="fa-solid fa-house-user pe-2"></i>Pune</span>
+                  <span class="card-tags"><i class="fa-brands fa-paypal pe-2"></i>2 Opening</span>
+                  <span class="card-tags"><i class="fa-solid fa-user-graduate pe-2"></i>Post Graduate</span>
+                  <span class="card-tags"><i class="fa-solid fa-sun pe-2"></i>For Freshers </span>
+                </div>
+                <div class="col-3">
+
+                  <i class="fa-solid fa-house-user  txt-dark-blue fs-4"></i>
+                  <i class="fa-brands fa-paypal txt-dark-blue fs-4"></i>
+                  <i class="fa-solid fa-star-and-crescent txt-dark-blue fs-4"></i>
+                  <i class="fa-solid fa-venus txt-dark-blue fs-4"></i>
+
+                </div>
+              </div>
+              <div class="pt-1 ">
+                <button class="btn bg-Primary text-light card-btn mx-1">Apply Now</button>
+                <button class="btn bg-Primary text-light card-btn mx-1">Save for Later</button>
+              </div>
+            </div>
+            <div class="col-lg pt-lg-0 pb-2 d-flex justify-content-center align-items-center">
+              <h6 class="m-0 me-5  "> <span class="text-success rounded-circle "><i class="fa-solid fa-circle"></i>
+                </span> Actively recruiting</h6>
+              <i class="fa-solid fa-share-nodes fa-lg txt-dark-blue"></i>
+            </div>
+          </div>
+        </div>
+        <div class="">
+          <div class="card job-card">
+            <div class="card-header bg-Primary d-flex align-items-center justify-content-between">
+
+              <h5 class="m-0 text-white">Python Developer
+              </h5>
+              <p class="  m-0 text-white">50,000/- to 80,000/-</p>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Aptological pvt.ltd</h5>
+              <div class="row justify-content-between">
+                <div class="col-9 d-flex flex-wrap justify-content-start">
+                  <span class="card-tags"><i class="fa-solid fa-house-user pe-2"></i>Pune</span>
+                  <span class="card-tags"><i class="fa-brands fa-paypal pe-2"></i>2 Opening</span>
+                  <span class="card-tags"><i class="fa-solid fa-user-graduate pe-2"></i>Post Graduate</span>
+                  <span class="card-tags"><i class="fa-solid fa-sun pe-2"></i>For Freshers </span>
+                </div>
+                <div class="col-3">
+
+                  <i class="fa-solid fa-house-user  txt-dark-blue fs-4"></i>
+                  <i class="fa-brands fa-paypal txt-dark-blue fs-4"></i>
+                  <i class="fa-solid fa-star-and-crescent txt-dark-blue fs-4"></i>
+                  <i class="fa-solid fa-venus txt-dark-blue fs-4"></i>
+
+                </div>
+              </div>
+              <div class="pt-1 ">
+                <button class="btn bg-Primary text-light card-btn mx-1">Apply Now</button>
+                <button class="btn bg-Primary text-light card-btn mx-1">Save for Later</button>
+              </div>
+            </div>
+            <div class="col-lg pt-lg-0 pb-2 d-flex justify-content-center align-items-center">
+              <h6 class="m-0 me-5  "> <span class="text-success rounded-circle "><i class="fa-solid fa-circle"></i>
+                </span> Actively recruiting</h6>
+              <i class="fa-solid fa-share-nodes fa-lg txt-dark-blue"></i>
+            </div>
+          </div>
+        </div>
+        <div class="">
+          <div class="card job-card">
+            <div class="card-header bg-Primary d-flex align-items-center justify-content-between">
+
+              <h5 class="m-0 text-white">Python Developer
+              </h5>
+              <p class="  m-0 text-white">50,000/- to 80,000/-</p>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Aptological pvt.ltd</h5>
+              <div class="row justify-content-between">
+                <div class="col-9 d-flex flex-wrap justify-content-start">
+                  <span class="card-tags"><i class="fa-solid fa-house-user pe-2"></i>Pune</span>
+                  <span class="card-tags"><i class="fa-brands fa-paypal pe-2"></i>2 Opening</span>
+                  <span class="card-tags"><i class="fa-solid fa-user-graduate pe-2"></i>Post Graduate</span>
+                  <span class="card-tags"><i class="fa-solid fa-sun pe-2"></i>For Freshers </span>
+                </div>
+                <div class="col-3">
+
+                  <i class="fa-solid fa-house-user  txt-dark-blue fs-4"></i>
+                  <i class="fa-brands fa-paypal txt-dark-blue fs-4"></i>
+                  <i class="fa-solid fa-star-and-crescent txt-dark-blue fs-4"></i>
+                  <i class="fa-solid fa-venus txt-dark-blue fs-4"></i>
+
+                </div>
+              </div>
+              <div class="pt-1 ">
+                <button class="btn bg-Primary text-light card-btn mx-1">Apply Now</button>
+                <button class="btn bg-Primary text-light card-btn mx-1">Save for Later</button>
+              </div>
+            </div>
+            <div class="col-lg pt-lg-0 pb-2 d-flex justify-content-center align-items-center">
+              <h6 class="m-0 me-5  "> <span class="text-success rounded-circle "><i class="fa-solid fa-circle"></i>
+                </span> Actively recruiting</h6>
+              <i class="fa-solid fa-share-nodes fa-lg txt-dark-blue"></i>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+
+    </section>
+    <!--------------------------------------------------------------------------------row-one -->
+
+    <section class="container pt-3 row-One">
+      <div>
+        <p>All Jobs <i class="fa-solid fa-chevron-right"></i></p>
+        <h5>Jobs in India</h5>
+      </div>
+      <div class="owl-last owl-carousel owl-theme ">
+        <div class="">
+          <div class="card job-card">
+            <div class="card-header bg-Primary d-flex align-items-center justify-content-between">
+
+              <h5 class="m-0 text-white">Python Developer
+              </h5>
+              <p class="  m-0 text-white">50,000/- to 80,000/-</p>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Aptological pvt.ltd</h5>
+              <div class="row justify-content-between">
+                <div class="col-9 d-flex flex-wrap justify-content-start">
+                  <span class="card-tags"><i class="fa-solid fa-house-user pe-2"></i>Pune</span>
+                  <span class="card-tags"><i class="fa-brands fa-paypal pe-2"></i>2 Opening</span>
+                  <span class="card-tags"><i class="fa-solid fa-user-graduate pe-2"></i>Post Graduate</span>
+                  <span class="card-tags"><i class="fa-solid fa-sun pe-2"></i>For Freshers </span>
+                </div>
+                <div class="col-3">
+
+                  <i class="fa-solid fa-house-user  txt-dark-blue fs-4"></i>
+                  <i class="fa-brands fa-paypal txt-dark-blue fs-4"></i>
+                  <i class="fa-solid fa-star-and-crescent txt-dark-blue fs-4"></i>
+                  <i class="fa-solid fa-venus txt-dark-blue fs-4"></i>
+
+                </div>
+              </div>
+              <div class="pt-1 ">
+                <button class="btn bg-Primary text-light card-btn mx-1">Apply Now</button>
+                <button class="btn bg-Primary text-light card-btn mx-1">Save for Later</button>
+              </div>
+            </div>
+            <div class="col-lg pt-lg-0 pb-2 d-flex justify-content-center align-items-center">
+              <h6 class="m-0 me-5  "> <span class="text-success rounded-circle "><i class="fa-solid fa-circle"></i>
+                </span> Actively recruiting</h6>
+              <i class="fa-solid fa-share-nodes fa-lg txt-dark-blue"></i>
+            </div>
+          </div>
+        </div>
+        <div class="">
+          <div class="card job-card">
+            <div class="card-header bg-Primary d-flex align-items-center justify-content-between">
+
+              <h5 class="m-0 text-white">Python Developer
+              </h5>
+              <p class="  m-0 text-white">50,000/- to 80,000/-</p>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Aptological pvt.ltd</h5>
+              <div class="row justify-content-between">
+                <div class="col-9 d-flex flex-wrap justify-content-start">
+                  <span class="card-tags"><i class="fa-solid fa-house-user pe-2"></i>Pune</span>
+                  <span class="card-tags"><i class="fa-brands fa-paypal pe-2"></i>2 Opening</span>
+                  <span class="card-tags"><i class="fa-solid fa-user-graduate pe-2"></i>Post Graduate</span>
+                  <span class="card-tags"><i class="fa-solid fa-sun pe-2"></i>For Freshers </span>
+                </div>
+                <div class="col-3">
+
+                  <i class="fa-solid fa-house-user  txt-dark-blue fs-4"></i>
+                  <i class="fa-brands fa-paypal txt-dark-blue fs-4"></i>
+                  <i class="fa-solid fa-star-and-crescent txt-dark-blue fs-4"></i>
+                  <i class="fa-solid fa-venus txt-dark-blue fs-4"></i>
+
+                </div>
+              </div>
+              <div class="pt-1 ">
+                <button class="btn bg-Primary text-light card-btn mx-1">Apply Now</button>
+                <button class="btn bg-Primary text-light card-btn mx-1">Save for Later</button>
+              </div>
+            </div>
+            <div class="col-lg pt-lg-0 pb-2 d-flex justify-content-center align-items-center">
+              <h6 class="m-0 me-5  "> <span class="text-success rounded-circle "><i class="fa-solid fa-circle"></i>
+                </span> Actively recruiting</h6>
+              <i class="fa-solid fa-share-nodes fa-lg txt-dark-blue"></i>
+            </div>
+          </div>
+        </div>
+        <div class="">
+          <div class="card job-card">
+            <div class="card-header bg-Primary d-flex align-items-center justify-content-between">
+
+              <h5 class="m-0 text-white">Python Developer
+              </h5>
+              <p class="  m-0 text-white">50,000/- to 80,000/-</p>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Aptological pvt.ltd</h5>
+              <div class="row justify-content-between">
+                <div class="col-9 d-flex flex-wrap justify-content-start">
+                  <span class="card-tags"><i class="fa-solid fa-house-user pe-2"></i>Pune</span>
+                  <span class="card-tags"><i class="fa-brands fa-paypal pe-2"></i>2 Opening</span>
+                  <span class="card-tags"><i class="fa-solid fa-user-graduate pe-2"></i>Post Graduate</span>
+                  <span class="card-tags"><i class="fa-solid fa-sun pe-2"></i>For Freshers </span>
+                </div>
+                <div class="col-3">
+
+                  <i class="fa-solid fa-house-user  txt-dark-blue fs-4"></i>
+                  <i class="fa-brands fa-paypal txt-dark-blue fs-4"></i>
+                  <i class="fa-solid fa-star-and-crescent txt-dark-blue fs-4"></i>
+                  <i class="fa-solid fa-venus txt-dark-blue fs-4"></i>
+
+                </div>
+              </div>
+              <div class="pt-1 ">
+                <button class="btn bg-Primary text-light card-btn mx-1">Apply Now</button>
+                <button class="btn bg-Primary text-light card-btn mx-1">Save for Later</button>
+              </div>
+            </div>
+            <div class="col-lg pt-lg-0 pb-2 d-flex justify-content-center align-items-center">
+              <h6 class="m-0 me-5  "> <span class="text-success rounded-circle "><i class="fa-solid fa-circle"></i>
+                </span> Actively recruiting</h6>
+              <i class="fa-solid fa-share-nodes fa-lg txt-dark-blue"></i>
+            </div>
+          </div>
+        </div>
+        <div class="">
+          <div class="card job-card">
+            <div class="card-header bg-Primary d-flex align-items-center justify-content-between">
+
+              <h5 class="m-0 text-white">Python Developer
+              </h5>
+              <p class="  m-0 text-white">50,000/- to 80,000/-</p>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Aptological pvt.ltd</h5>
+              <div class="row justify-content-between">
+                <div class="col-9 d-flex flex-wrap justify-content-start">
+                  <span class="card-tags"><i class="fa-solid fa-house-user pe-2"></i>Pune</span>
+                  <span class="card-tags"><i class="fa-brands fa-paypal pe-2"></i>2 Opening</span>
+                  <span class="card-tags"><i class="fa-solid fa-user-graduate pe-2"></i>Post Graduate</span>
+                  <span class="card-tags"><i class="fa-solid fa-sun pe-2"></i>For Freshers </span>
+                </div>
+                <div class="col-3">
+
+                  <i class="fa-solid fa-house-user  txt-dark-blue fs-4"></i>
+                  <i class="fa-brands fa-paypal txt-dark-blue fs-4"></i>
+                  <i class="fa-solid fa-star-and-crescent txt-dark-blue fs-4"></i>
+                  <i class="fa-solid fa-venus txt-dark-blue fs-4"></i>
+
+                </div>
+              </div>
+              <div class="pt-1 ">
+                <button class="btn bg-Primary text-light card-btn mx-1">Apply Now</button>
+                <button class="btn bg-Primary text-light card-btn mx-1">Save for Later</button>
+              </div>
+            </div>
+            <div class="col-lg pt-lg-0 pb-2 d-flex justify-content-center align-items-center">
+              <h6 class="m-0 me-5  "> <span class="text-success rounded-circle "><i class="fa-solid fa-circle"></i>
+                </span> Actively recruiting</h6>
+              <i class="fa-solid fa-share-nodes fa-lg txt-dark-blue"></i>
+            </div>
+          </div>
+        </div>
+        <div class="">
+          <div class="card job-card">
+            <div class="card-header bg-Primary d-flex align-items-center justify-content-between">
+
+              <h5 class="m-0 text-white">Python Developer
+              </h5>
+              <p class="  m-0 text-white">50,000/- to 80,000/-</p>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Aptological pvt.ltd</h5>
+              <div class="row justify-content-between">
+                <div class="col-9 d-flex flex-wrap justify-content-start">
+                  <span class="card-tags"><i class="fa-solid fa-house-user pe-2"></i>Pune</span>
+                  <span class="card-tags"><i class="fa-brands fa-paypal pe-2"></i>2 Opening</span>
+                  <span class="card-tags"><i class="fa-solid fa-user-graduate pe-2"></i>Post Graduate</span>
+                  <span class="card-tags"><i class="fa-solid fa-sun pe-2"></i>For Freshers </span>
+                </div>
+                <div class="col-3">
+
+                  <i class="fa-solid fa-house-user  txt-dark-blue fs-4"></i>
+                  <i class="fa-brands fa-paypal txt-dark-blue fs-4"></i>
+                  <i class="fa-solid fa-star-and-crescent txt-dark-blue fs-4"></i>
+                  <i class="fa-solid fa-venus txt-dark-blue fs-4"></i>
+
+                </div>
+              </div>
+              <div class="pt-1 ">
+                <button class="btn bg-Primary text-light card-btn mx-1">Apply Now</button>
+                <button class="btn bg-Primary text-light card-btn mx-1">Save for Later</button>
+              </div>
+            </div>
+            <div class="col-lg pt-lg-0 pb-2 d-flex justify-content-center align-items-center">
+              <h6 class="m-0 me-5  "> <span class="text-success rounded-circle "><i class="fa-solid fa-circle"></i>
+                </span> Actively recruiting</h6>
+              <i class="fa-solid fa-share-nodes fa-lg txt-dark-blue"></i>
+            </div>
+          </div>
+        </div>
+        <div class="">
+          <div class="card job-card">
+            <div class="card-header bg-Primary d-flex align-items-center justify-content-between">
+
+              <h5 class="m-0 text-white">Python Developer
+              </h5>
+              <p class="  m-0 text-white">50,000/- to 80,000/-</p>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Aptological pvt.ltd</h5>
+              <div class="row justify-content-between">
+                <div class="col-9 d-flex flex-wrap justify-content-start">
+                  <span class="card-tags"><i class="fa-solid fa-house-user pe-2"></i>Pune</span>
+                  <span class="card-tags"><i class="fa-brands fa-paypal pe-2"></i>2 Opening</span>
+                  <span class="card-tags"><i class="fa-solid fa-user-graduate pe-2"></i>Post Graduate</span>
+                  <span class="card-tags"><i class="fa-solid fa-sun pe-2"></i>For Freshers </span>
+                </div>
+                <div class="col-3">
+
+                  <i class="fa-solid fa-house-user  txt-dark-blue fs-4"></i>
+                  <i class="fa-brands fa-paypal txt-dark-blue fs-4"></i>
+                  <i class="fa-solid fa-star-and-crescent txt-dark-blue fs-4"></i>
+                  <i class="fa-solid fa-venus txt-dark-blue fs-4"></i>
+
+                </div>
+              </div>
+              <div class="pt-1 ">
+                <button class="btn bg-Primary text-light card-btn mx-1">Apply Now</button>
+                <button class="btn bg-Primary text-light card-btn mx-1">Save for Later</button>
+              </div>
+            </div>
+            <div class="col-lg pt-lg-0 pb-2 d-flex justify-content-center align-items-center">
+              <h6 class="m-0 me-5  "> <span class="text-success rounded-circle "><i class="fa-solid fa-circle"></i>
+                </span> Actively recruiting</h6>
+              <i class="fa-solid fa-share-nodes fa-lg txt-dark-blue"></i>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </section>
+    <!---------------------------------------------------------------------------------------row-two -->
+    <section class="container py-3 row-Two">
+      <div>
+        <h5>Jobs in metro city</h5>
+      </div>
+      <div class="owl-last owl-carousel owl-theme ">
+        <div class="">
+          <div class="card job-card">
+            <div class="card-header bg-Primary d-flex align-items-center justify-content-between">
+
+              <h5 class="m-0 text-white">Python Developer
+              </h5>
+              <p class="  m-0 text-white">50,000/- to 80,000/-</p>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Aptological pvt.ltd</h5>
+              <div class="row justify-content-between">
+                <div class="col-9 d-flex flex-wrap justify-content-start">
+                  <span class="card-tags"><i class="fa-solid fa-house-user pe-2"></i>Pune</span>
+                  <span class="card-tags"><i class="fa-brands fa-paypal pe-2"></i>2 Opening</span>
+                  <span class="card-tags"><i class="fa-solid fa-user-graduate pe-2"></i>Post Graduate</span>
+                  <span class="card-tags"><i class="fa-solid fa-sun pe-2"></i>For Freshers </span>
+                </div>
+                <div class="col-3">
+
+                  <i class="fa-solid fa-house-user  txt-dark-blue fs-4"></i>
+                  <i class="fa-brands fa-paypal txt-dark-blue fs-4"></i>
+                  <i class="fa-solid fa-star-and-crescent txt-dark-blue fs-4"></i>
+                  <i class="fa-solid fa-venus txt-dark-blue fs-4"></i>
+
+                </div>
+              </div>
+              <div class="pt-1 ">
+                <button class="btn bg-Primary text-light card-btn mx-1">Apply Now</button>
+                <button class="btn bg-Primary text-light card-btn mx-1">Save for Later</button>
+              </div>
+            </div>
+            <div class="col-lg pt-lg-0 pb-2 d-flex justify-content-center align-items-center">
+              <h6 class="m-0 me-5  "> <span class="text-success rounded-circle "><i class="fa-solid fa-circle"></i>
+                </span> Actively recruiting</h6>
+              <i class="fa-solid fa-share-nodes fa-lg txt-dark-blue"></i>
+            </div>
+          </div>
+        </div>
+        <div class="">
+          <div class="card job-card">
+            <div class="card-header bg-Primary d-flex align-items-center justify-content-between">
+
+              <h5 class="m-0 text-white">Python Developer
+              </h5>
+              <p class="  m-0 text-white">50,000/- to 80,000/-</p>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Aptological pvt.ltd</h5>
+              <div class="row justify-content-between">
+                <div class="col-9 d-flex flex-wrap justify-content-start">
+                  <span class="card-tags"><i class="fa-solid fa-house-user pe-2"></i>Pune</span>
+                  <span class="card-tags"><i class="fa-brands fa-paypal pe-2"></i>2 Opening</span>
+                  <span class="card-tags"><i class="fa-solid fa-user-graduate pe-2"></i>Post Graduate</span>
+                  <span class="card-tags"><i class="fa-solid fa-sun pe-2"></i>For Freshers </span>
+                </div>
+                <div class="col-3">
+
+                  <i class="fa-solid fa-house-user  txt-dark-blue fs-4"></i>
+                  <i class="fa-brands fa-paypal txt-dark-blue fs-4"></i>
+                  <i class="fa-solid fa-star-and-crescent txt-dark-blue fs-4"></i>
+                  <i class="fa-solid fa-venus txt-dark-blue fs-4"></i>
+
+                </div>
+              </div>
+              <div class="pt-1 ">
+                <button class="btn bg-Primary text-light card-btn mx-1">Apply Now</button>
+                <button class="btn bg-Primary text-light card-btn mx-1">Save for Later</button>
+              </div>
+            </div>
+            <div class="col-lg pt-lg-0 pb-2 d-flex justify-content-center align-items-center">
+              <h6 class="m-0 me-5  "> <span class="text-success rounded-circle "><i class="fa-solid fa-circle"></i>
+                </span> Actively recruiting</h6>
+              <i class="fa-solid fa-share-nodes fa-lg txt-dark-blue"></i>
+            </div>
+          </div>
+        </div>
+        <div class="">
+          <div class="card job-card">
+            <div class="card-header bg-Primary d-flex align-items-center justify-content-between">
+
+              <h5 class="m-0 text-white">Python Developer
+              </h5>
+              <p class="  m-0 text-white">50,000/- to 80,000/-</p>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Aptological pvt.ltd</h5>
+              <div class="row justify-content-between">
+                <div class="col-9 d-flex flex-wrap justify-content-start">
+                  <span class="card-tags"><i class="fa-solid fa-house-user pe-2"></i>Pune</span>
+                  <span class="card-tags"><i class="fa-brands fa-paypal pe-2"></i>2 Opening</span>
+                  <span class="card-tags"><i class="fa-solid fa-user-graduate pe-2"></i>Post Graduate</span>
+                  <span class="card-tags"><i class="fa-solid fa-sun pe-2"></i>For Freshers </span>
+                </div>
+                <div class="col-3">
+
+                  <i class="fa-solid fa-house-user  txt-dark-blue fs-4"></i>
+                  <i class="fa-brands fa-paypal txt-dark-blue fs-4"></i>
+                  <i class="fa-solid fa-star-and-crescent txt-dark-blue fs-4"></i>
+                  <i class="fa-solid fa-venus txt-dark-blue fs-4"></i>
+
+                </div>
+              </div>
+              <div class="pt-1 ">
+                <button class="btn bg-Primary text-light card-btn mx-1">Apply Now</button>
+                <button class="btn bg-Primary text-light card-btn mx-1">Save for Later</button>
+              </div>
+            </div>
+            <div class="col-lg pt-lg-0 pb-2 d-flex justify-content-center align-items-center">
+              <h6 class="m-0 me-5  "> <span class="text-success rounded-circle "><i class="fa-solid fa-circle"></i>
+                </span> Actively recruiting</h6>
+              <i class="fa-solid fa-share-nodes fa-lg txt-dark-blue"></i>
+            </div>
+          </div>
+        </div>
+        <div class="">
+          <div class="card job-card">
+            <div class="card-header bg-Primary d-flex align-items-center justify-content-between">
+
+              <h5 class="m-0 text-white">Python Developer
+              </h5>
+              <p class="  m-0 text-white">50,000/- to 80,000/-</p>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Aptological pvt.ltd</h5>
+              <div class="row justify-content-between">
+                <div class="col-9 d-flex flex-wrap justify-content-start">
+                  <span class="card-tags"><i class="fa-solid fa-house-user pe-2"></i>Pune</span>
+                  <span class="card-tags"><i class="fa-brands fa-paypal pe-2"></i>2 Opening</span>
+                  <span class="card-tags"><i class="fa-solid fa-user-graduate pe-2"></i>Post Graduate</span>
+                  <span class="card-tags"><i class="fa-solid fa-sun pe-2"></i>For Freshers </span>
+                </div>
+                <div class="col-3">
+
+                  <i class="fa-solid fa-house-user  txt-dark-blue fs-4"></i>
+                  <i class="fa-brands fa-paypal txt-dark-blue fs-4"></i>
+                  <i class="fa-solid fa-star-and-crescent txt-dark-blue fs-4"></i>
+                  <i class="fa-solid fa-venus txt-dark-blue fs-4"></i>
+
+                </div>
+              </div>
+              <div class="pt-1 ">
+                <button class="btn bg-Primary text-light card-btn mx-1">Apply Now</button>
+                <button class="btn bg-Primary text-light card-btn mx-1">Save for Later</button>
+              </div>
+            </div>
+            <div class="col-lg pt-lg-0 pb-2 d-flex justify-content-center align-items-center">
+              <h6 class="m-0 me-5  "> <span class="text-success rounded-circle "><i class="fa-solid fa-circle"></i>
+                </span> Actively recruiting</h6>
+              <i class="fa-solid fa-share-nodes fa-lg txt-dark-blue"></i>
+            </div>
+          </div>
+        </div>
+        <div class="">
+          <div class="card job-card">
+            <div class="card-header bg-Primary d-flex align-items-center justify-content-between">
+
+              <h5 class="m-0 text-white">Python Developer
+              </h5>
+              <p class="  m-0 text-white">50,000/- to 80,000/-</p>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Aptological pvt.ltd</h5>
+              <div class="row justify-content-between">
+                <div class="col-9 d-flex flex-wrap justify-content-start">
+                  <span class="card-tags"><i class="fa-solid fa-house-user pe-2"></i>Pune</span>
+                  <span class="card-tags"><i class="fa-brands fa-paypal pe-2"></i>2 Opening</span>
+                  <span class="card-tags"><i class="fa-solid fa-user-graduate pe-2"></i>Post Graduate</span>
+                  <span class="card-tags"><i class="fa-solid fa-sun pe-2"></i>For Freshers </span>
+                </div>
+                <div class="col-3">
+
+                  <i class="fa-solid fa-house-user  txt-dark-blue fs-4"></i>
+                  <i class="fa-brands fa-paypal txt-dark-blue fs-4"></i>
+                  <i class="fa-solid fa-star-and-crescent txt-dark-blue fs-4"></i>
+                  <i class="fa-solid fa-venus txt-dark-blue fs-4"></i>
+
+                </div>
+              </div>
+              <div class="pt-1 ">
+                <button class="btn bg-Primary text-light card-btn mx-1">Apply Now</button>
+                <button class="btn bg-Primary text-light card-btn mx-1">Save for Later</button>
+              </div>
+            </div>
+            <div class="col-lg pt-lg-0 pb-2 d-flex justify-content-center align-items-center">
+              <h6 class="m-0 me-5  "> <span class="text-success rounded-circle "><i class="fa-solid fa-circle"></i>
+                </span> Actively recruiting</h6>
+              <i class="fa-solid fa-share-nodes fa-lg txt-dark-blue"></i>
+            </div>
+          </div>
+        </div>
+        <div class="">
+          <div class="card job-card">
+            <div class="card-header bg-Primary d-flex align-items-center justify-content-between">
+
+              <h5 class="m-0 text-white">Python Developer
+              </h5>
+              <p class="  m-0 text-white">50,000/- to 80,000/-</p>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Aptological pvt.ltd</h5>
+              <div class="row justify-content-between">
+                <div class="col-9 d-flex flex-wrap justify-content-start">
+                  <span class="card-tags"><i class="fa-solid fa-house-user pe-2"></i>Pune</span>
+                  <span class="card-tags"><i class="fa-brands fa-paypal pe-2"></i>2 Opening</span>
+                  <span class="card-tags"><i class="fa-solid fa-user-graduate pe-2"></i>Post Graduate</span>
+                  <span class="card-tags"><i class="fa-solid fa-sun pe-2"></i>For Freshers </span>
+                </div>
+                <div class="col-3">
+
+                  <i class="fa-solid fa-house-user  txt-dark-blue fs-4"></i>
+                  <i class="fa-brands fa-paypal txt-dark-blue fs-4"></i>
+                  <i class="fa-solid fa-star-and-crescent txt-dark-blue fs-4"></i>
+                  <i class="fa-solid fa-venus txt-dark-blue fs-4"></i>
+
+                </div>
+              </div>
+              <div class="pt-1 ">
+                <button class="btn bg-Primary text-light card-btn mx-1">Apply Now</button>
+                <button class="btn bg-Primary text-light card-btn mx-1">Save for Later</button>
+              </div>
+            </div>
+            <div class="col-lg pt-lg-0 pb-2 d-flex justify-content-center align-items-center">
+              <h6 class="m-0 me-5  "> <span class="text-success rounded-circle "><i class="fa-solid fa-circle"></i>
+                </span> Actively recruiting</h6>
+              <i class="fa-solid fa-share-nodes fa-lg txt-dark-blue"></i>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </section>
+    <!---------------------------------------------------------------------------------------row-three -->
+
+    <section class="container py-3 row-three">
+      <div>
+        <h5>Jobs in PUNE</h5>
+        <h6>Creative and Design</h6>
+      </div>
+      <div class="owl-last owl-carousel owl-theme ">
+        <div class="">
+          <div class="card job-card">
+            <div class="card-header bg-Primary d-flex align-items-center justify-content-between">
+
+              <h5 class="m-0 text-white">Python Developer
+              </h5>
+              <p class="  m-0 text-white">50,000/- to 80,000/-</p>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Aptological pvt.ltd</h5>
+              <div class="row justify-content-between">
+                <div class="col-9 d-flex flex-wrap justify-content-start">
+                  <span class="card-tags"><i class="fa-solid fa-house-user pe-2"></i>Pune</span>
+                  <span class="card-tags"><i class="fa-brands fa-paypal pe-2"></i>2 Opening</span>
+                  <span class="card-tags"><i class="fa-solid fa-user-graduate pe-2"></i>Post Graduate</span>
+                  <span class="card-tags"><i class="fa-solid fa-sun pe-2"></i>For Freshers </span>
+                </div>
+                <div class="col-3">
+
+                  <i class="fa-solid fa-house-user  txt-dark-blue fs-4"></i>
+                  <i class="fa-brands fa-paypal txt-dark-blue fs-4"></i>
+                  <i class="fa-solid fa-star-and-crescent txt-dark-blue fs-4"></i>
+                  <i class="fa-solid fa-venus txt-dark-blue fs-4"></i>
+
+                </div>
+              </div>
+              <div class="pt-1 ">
+                <button class="btn bg-Primary text-light card-btn mx-1">Apply Now</button>
+                <button class="btn bg-Primary text-light card-btn mx-1">Save for Later</button>
+              </div>
+            </div>
+            <div class="col-lg pt-lg-0 pb-2 d-flex justify-content-center align-items-center">
+              <h6 class="m-0 me-5  "> <span class="text-success rounded-circle "><i class="fa-solid fa-circle"></i>
+                </span> Actively recruiting</h6>
+              <i class="fa-solid fa-share-nodes fa-lg txt-dark-blue"></i>
+            </div>
+          </div>
+        </div>
+        <div class="">
+          <div class="card job-card">
+            <div class="card-header bg-Primary d-flex align-items-center justify-content-between">
+
+              <h5 class="m-0 text-white">Python Developer
+              </h5>
+              <p class="  m-0 text-white">50,000/- to 80,000/-</p>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Aptological pvt.ltd</h5>
+              <div class="row justify-content-between">
+                <div class="col-9 d-flex flex-wrap justify-content-start">
+                  <span class="card-tags"><i class="fa-solid fa-house-user pe-2"></i>Pune</span>
+                  <span class="card-tags"><i class="fa-brands fa-paypal pe-2"></i>2 Opening</span>
+                  <span class="card-tags"><i class="fa-solid fa-user-graduate pe-2"></i>Post Graduate</span>
+                  <span class="card-tags"><i class="fa-solid fa-sun pe-2"></i>For Freshers </span>
+                </div>
+                <div class="col-3">
+
+                  <i class="fa-solid fa-house-user  txt-dark-blue fs-4"></i>
+                  <i class="fa-brands fa-paypal txt-dark-blue fs-4"></i>
+                  <i class="fa-solid fa-star-and-crescent txt-dark-blue fs-4"></i>
+                  <i class="fa-solid fa-venus txt-dark-blue fs-4"></i>
+
+                </div>
+              </div>
+              <div class="pt-1 ">
+                <button class="btn bg-Primary text-light card-btn mx-1">Apply Now</button>
+                <button class="btn bg-Primary text-light card-btn mx-1">Save for Later</button>
+              </div>
+            </div>
+            <div class="col-lg pt-lg-0 pb-2 d-flex justify-content-center align-items-center">
+              <h6 class="m-0 me-5  "> <span class="text-success rounded-circle "><i class="fa-solid fa-circle"></i>
+                </span> Actively recruiting</h6>
+              <i class="fa-solid fa-share-nodes fa-lg txt-dark-blue"></i>
+            </div>
+          </div>
+        </div>
+        <div class="">
+          <div class="card job-card">
+            <div class="card-header bg-Primary d-flex align-items-center justify-content-between">
+
+              <h5 class="m-0 text-white">Python Developer
+              </h5>
+              <p class="  m-0 text-white">50,000/- to 80,000/-</p>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Aptological pvt.ltd</h5>
+              <div class="row justify-content-between">
+                <div class="col-9 d-flex flex-wrap justify-content-start">
+                  <span class="card-tags"><i class="fa-solid fa-house-user pe-2"></i>Pune</span>
+                  <span class="card-tags"><i class="fa-brands fa-paypal pe-2"></i>2 Opening</span>
+                  <span class="card-tags"><i class="fa-solid fa-user-graduate pe-2"></i>Post Graduate</span>
+                  <span class="card-tags"><i class="fa-solid fa-sun pe-2"></i>For Freshers </span>
+                </div>
+                <div class="col-3">
+
+                  <i class="fa-solid fa-house-user  txt-dark-blue fs-4"></i>
+                  <i class="fa-brands fa-paypal txt-dark-blue fs-4"></i>
+                  <i class="fa-solid fa-star-and-crescent txt-dark-blue fs-4"></i>
+                  <i class="fa-solid fa-venus txt-dark-blue fs-4"></i>
+
+                </div>
+              </div>
+              <div class="pt-1 ">
+                <button class="btn bg-Primary text-light card-btn mx-1">Apply Now</button>
+                <button class="btn bg-Primary text-light card-btn mx-1">Save for Later</button>
+              </div>
+            </div>
+            <div class="col-lg pt-lg-0 pb-2 d-flex justify-content-center align-items-center">
+              <h6 class="m-0 me-5  "> <span class="text-success rounded-circle "><i class="fa-solid fa-circle"></i>
+                </span> Actively recruiting</h6>
+              <i class="fa-solid fa-share-nodes fa-lg txt-dark-blue"></i>
+            </div>
+          </div>
+        </div>
+        <div class="">
+          <div class="card job-card">
+            <div class="card-header bg-Primary d-flex align-items-center justify-content-between">
+
+              <h5 class="m-0 text-white">Python Developer
+              </h5>
+              <p class="  m-0 text-white">50,000/- to 80,000/-</p>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Aptological pvt.ltd</h5>
+              <div class="row justify-content-between">
+                <div class="col-9 d-flex flex-wrap justify-content-start">
+                  <span class="card-tags"><i class="fa-solid fa-house-user pe-2"></i>Pune</span>
+                  <span class="card-tags"><i class="fa-brands fa-paypal pe-2"></i>2 Opening</span>
+                  <span class="card-tags"><i class="fa-solid fa-user-graduate pe-2"></i>Post Graduate</span>
+                  <span class="card-tags"><i class="fa-solid fa-sun pe-2"></i>For Freshers </span>
+                </div>
+                <div class="col-3">
+
+                  <i class="fa-solid fa-house-user  txt-dark-blue fs-4"></i>
+                  <i class="fa-brands fa-paypal txt-dark-blue fs-4"></i>
+                  <i class="fa-solid fa-star-and-crescent txt-dark-blue fs-4"></i>
+                  <i class="fa-solid fa-venus txt-dark-blue fs-4"></i>
+
+                </div>
+              </div>
+              <div class="pt-1 ">
+                <button class="btn bg-Primary text-light card-btn mx-1">Apply Now</button>
+                <button class="btn bg-Primary text-light card-btn mx-1">Save for Later</button>
+              </div>
+            </div>
+            <div class="col-lg pt-lg-0 pb-2 d-flex justify-content-center align-items-center">
+              <h6 class="m-0 me-5  "> <span class="text-success rounded-circle "><i class="fa-solid fa-circle"></i>
+                </span> Actively recruiting</h6>
+              <i class="fa-solid fa-share-nodes fa-lg txt-dark-blue"></i>
+            </div>
+          </div>
+        </div>
+        <div class="">
+          <div class="card job-card">
+            <div class="card-header bg-Primary d-flex align-items-center justify-content-between">
+
+              <h5 class="m-0 text-white">Python Developer
+              </h5>
+              <p class="  m-0 text-white">50,000/- to 80,000/-</p>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Aptological pvt.ltd</h5>
+              <div class="row justify-content-between">
+                <div class="col-9 d-flex flex-wrap justify-content-start">
+                  <span class="card-tags"><i class="fa-solid fa-house-user pe-2"></i>Pune</span>
+                  <span class="card-tags"><i class="fa-brands fa-paypal pe-2"></i>2 Opening</span>
+                  <span class="card-tags"><i class="fa-solid fa-user-graduate pe-2"></i>Post Graduate</span>
+                  <span class="card-tags"><i class="fa-solid fa-sun pe-2"></i>For Freshers </span>
+                </div>
+                <div class="col-3">
+
+                  <i class="fa-solid fa-house-user  txt-dark-blue fs-4"></i>
+                  <i class="fa-brands fa-paypal txt-dark-blue fs-4"></i>
+                  <i class="fa-solid fa-star-and-crescent txt-dark-blue fs-4"></i>
+                  <i class="fa-solid fa-venus txt-dark-blue fs-4"></i>
+
+                </div>
+              </div>
+              <div class="pt-1 ">
+                <button class="btn bg-Primary text-light card-btn mx-1">Apply Now</button>
+                <button class="btn bg-Primary text-light card-btn mx-1">Save for Later</button>
+              </div>
+            </div>
+            <div class="col-lg pt-lg-0 pb-2 d-flex justify-content-center align-items-center">
+              <h6 class="m-0 me-5  "> <span class="text-success rounded-circle "><i class="fa-solid fa-circle"></i>
+                </span> Actively recruiting</h6>
+              <i class="fa-solid fa-share-nodes fa-lg txt-dark-blue"></i>
+            </div>
+          </div>
+        </div>
+        <div class="">
+          <div class="card job-card">
+            <div class="card-header bg-Primary d-flex align-items-center justify-content-between">
+
+              <h5 class="m-0 text-white">Python Developer
+              </h5>
+              <p class="  m-0 text-white">50,000/- to 80,000/-</p>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Aptological pvt.ltd</h5>
+              <div class="row justify-content-between">
+                <div class="col-9 d-flex flex-wrap justify-content-start">
+                  <span class="card-tags"><i class="fa-solid fa-house-user pe-2"></i>Pune</span>
+                  <span class="card-tags"><i class="fa-brands fa-paypal pe-2"></i>2 Opening</span>
+                  <span class="card-tags"><i class="fa-solid fa-user-graduate pe-2"></i>Post Graduate</span>
+                  <span class="card-tags"><i class="fa-solid fa-sun pe-2"></i>For Freshers </span>
+                </div>
+                <div class="col-3">
+
+                  <i class="fa-solid fa-house-user  txt-dark-blue fs-4"></i>
+                  <i class="fa-brands fa-paypal txt-dark-blue fs-4"></i>
+                  <i class="fa-solid fa-star-and-crescent txt-dark-blue fs-4"></i>
+                  <i class="fa-solid fa-venus txt-dark-blue fs-4"></i>
+
+                </div>
+              </div>
+              <div class="pt-1 ">
+                <button class="btn bg-Primary text-light card-btn mx-1">Apply Now</button>
+                <button class="btn bg-Primary text-light card-btn mx-1">Save for Later</button>
+              </div>
+            </div>
+            <div class="col-lg pt-lg-0 pb-2 d-flex justify-content-center align-items-center">
+              <h6 class="m-0 me-5  "> <span class="text-success rounded-circle "><i class="fa-solid fa-circle"></i>
+                </span> Actively recruiting</h6>
+              <i class="fa-solid fa-share-nodes fa-lg txt-dark-blue"></i>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </section>
+    <section class="container">
+      <h4>owl</h4>
+      <div class="owl-last owl-carousel owl-theme ">
+        <div class="">
+          <div class="card job-card">
+            <div class="card-header bg-Primary d-flex align-items-center justify-content-between">
+
+              <h5 class="m-0 text-white">Python Developer
+              </h5>
+              <p class="  m-0 text-white">50,000/- to 80,000/-</p>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Aptological pvt.ltd</h5>
+              <div class="row justify-content-between">
+                <div class="col-9 d-flex flex-wrap justify-content-start">
+                  <span class="card-tags"><i class="fa-solid fa-house-user pe-2"></i>Pune</span>
+                  <span class="card-tags"><i class="fa-brands fa-paypal pe-2"></i>2 Opening</span>
+                  <span class="card-tags"><i class="fa-solid fa-user-graduate pe-2"></i>Post Graduate</span>
+                  <span class="card-tags"><i class="fa-solid fa-sun pe-2"></i>For Freshers </span>
+                </div>
+                <div class="col-3">
+
+                  <i class="fa-solid fa-house-user  txt-dark-blue fs-4"></i>
+                  <i class="fa-brands fa-paypal txt-dark-blue fs-4"></i>
+                  <i class="fa-solid fa-star-and-crescent txt-dark-blue fs-4"></i>
+                  <i class="fa-solid fa-venus txt-dark-blue fs-4"></i>
+
+                </div>
+              </div>
+              <div class="pt-1 ">
+                <button class="btn bg-Primary text-light card-btn mx-1">Apply Now</button>
+                <button class="btn bg-Primary text-light card-btn mx-1">Save for Later</button>
+              </div>
+            </div>
+            <div class="col-lg pt-lg-0 pb-2 d-flex justify-content-center align-items-center">
+              <h6 class="m-0 me-5  "> <span class="text-success rounded-circle "><i class="fa-solid fa-circle"></i>
+                </span> Actively recruiting</h6>
+              <i class="fa-solid fa-share-nodes fa-lg txt-dark-blue"></i>
+            </div>
+          </div>
+        </div>
+        <div class="">
+          <div class="card job-card">
+            <div class="card-header bg-Primary d-flex align-items-center justify-content-between">
+
+              <h5 class="m-0 text-white">Python Developer
+              </h5>
+              <p class="  m-0 text-white">50,000/- to 80,000/-</p>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Aptological pvt.ltd</h5>
+              <div class="row justify-content-between">
+                <div class="col-9 d-flex flex-wrap justify-content-start">
+                  <span class="card-tags"><i class="fa-solid fa-house-user pe-2"></i>Pune</span>
+                  <span class="card-tags"><i class="fa-brands fa-paypal pe-2"></i>2 Opening</span>
+                  <span class="card-tags"><i class="fa-solid fa-user-graduate pe-2"></i>Post Graduate</span>
+                  <span class="card-tags"><i class="fa-solid fa-sun pe-2"></i>For Freshers </span>
+                </div>
+                <div class="col-3">
+
+                  <i class="fa-solid fa-house-user  txt-dark-blue fs-4"></i>
+                  <i class="fa-brands fa-paypal txt-dark-blue fs-4"></i>
+                  <i class="fa-solid fa-star-and-crescent txt-dark-blue fs-4"></i>
+                  <i class="fa-solid fa-venus txt-dark-blue fs-4"></i>
+
+                </div>
+              </div>
+              <div class="pt-1 ">
+                <button class="btn bg-Primary text-light card-btn mx-1">Apply Now</button>
+                <button class="btn bg-Primary text-light card-btn mx-1">Save for Later</button>
+              </div>
+            </div>
+            <div class="col-lg pt-lg-0 pb-2 d-flex justify-content-center align-items-center">
+              <h6 class="m-0 me-5  "> <span class="text-success rounded-circle "><i class="fa-solid fa-circle"></i>
+                </span> Actively recruiting</h6>
+              <i class="fa-solid fa-share-nodes fa-lg txt-dark-blue"></i>
+            </div>
+          </div>
+        </div>
+        <div class="">
+          <div class="card job-card">
+            <div class="card-header bg-Primary d-flex align-items-center justify-content-between">
+
+              <h5 class="m-0 text-white">Python Developer
+              </h5>
+              <p class="  m-0 text-white">50,000/- to 80,000/-</p>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Aptological pvt.ltd</h5>
+              <div class="row justify-content-between">
+                <div class="col-9 d-flex flex-wrap justify-content-start">
+                  <span class="card-tags"><i class="fa-solid fa-house-user pe-2"></i>Pune</span>
+                  <span class="card-tags"><i class="fa-brands fa-paypal pe-2"></i>2 Opening</span>
+                  <span class="card-tags"><i class="fa-solid fa-user-graduate pe-2"></i>Post Graduate</span>
+                  <span class="card-tags"><i class="fa-solid fa-sun pe-2"></i>For Freshers </span>
+                </div>
+                <div class="col-3">
+
+                  <i class="fa-solid fa-house-user  txt-dark-blue fs-4"></i>
+                  <i class="fa-brands fa-paypal txt-dark-blue fs-4"></i>
+                  <i class="fa-solid fa-star-and-crescent txt-dark-blue fs-4"></i>
+                  <i class="fa-solid fa-venus txt-dark-blue fs-4"></i>
+
+                </div>
+              </div>
+              <div class="pt-1 ">
+                <button class="btn bg-Primary text-light card-btn mx-1">Apply Now</button>
+                <button class="btn bg-Primary text-light card-btn mx-1">Save for Later</button>
+              </div>
+            </div>
+            <div class="col-lg pt-lg-0 pb-2 d-flex justify-content-center align-items-center">
+              <h6 class="m-0 me-5  "> <span class="text-success rounded-circle "><i class="fa-solid fa-circle"></i>
+                </span> Actively recruiting</h6>
+              <i class="fa-solid fa-share-nodes fa-lg txt-dark-blue"></i>
+            </div>
+          </div>
+        </div>
+        <div class="">
+          <div class="card job-card">
+            <div class="card-header bg-Primary d-flex align-items-center justify-content-between">
+
+              <h5 class="m-0 text-white">Python Developer
+              </h5>
+              <p class="  m-0 text-white">50,000/- to 80,000/-</p>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Aptological pvt.ltd</h5>
+              <div class="row justify-content-between">
+                <div class="col-9 d-flex flex-wrap justify-content-start">
+                  <span class="card-tags"><i class="fa-solid fa-house-user pe-2"></i>Pune</span>
+                  <span class="card-tags"><i class="fa-brands fa-paypal pe-2"></i>2 Opening</span>
+                  <span class="card-tags"><i class="fa-solid fa-user-graduate pe-2"></i>Post Graduate</span>
+                  <span class="card-tags"><i class="fa-solid fa-sun pe-2"></i>For Freshers </span>
+                </div>
+                <div class="col-3">
+
+                  <i class="fa-solid fa-house-user  txt-dark-blue fs-4"></i>
+                  <i class="fa-brands fa-paypal txt-dark-blue fs-4"></i>
+                  <i class="fa-solid fa-star-and-crescent txt-dark-blue fs-4"></i>
+                  <i class="fa-solid fa-venus txt-dark-blue fs-4"></i>
+
+                </div>
+              </div>
+              <div class="pt-1 ">
+                <button class="btn bg-Primary text-light card-btn mx-1">Apply Now</button>
+                <button class="btn bg-Primary text-light card-btn mx-1">Save for Later</button>
+              </div>
+            </div>
+            <div class="col-lg pt-lg-0 pb-2 d-flex justify-content-center align-items-center">
+              <h6 class="m-0 me-5  "> <span class="text-success rounded-circle "><i class="fa-solid fa-circle"></i>
+                </span> Actively recruiting</h6>
+              <i class="fa-solid fa-share-nodes fa-lg txt-dark-blue"></i>
+            </div>
+          </div>
+        </div>
+        <div class="">
+          <div class="card job-card">
+            <div class="card-header bg-Primary d-flex align-items-center justify-content-between">
+
+              <h5 class="m-0 text-white">Python Developer
+              </h5>
+              <p class="  m-0 text-white">50,000/- to 80,000/-</p>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Aptological pvt.ltd</h5>
+              <div class="row justify-content-between">
+                <div class="col-9 d-flex flex-wrap justify-content-start">
+                  <span class="card-tags"><i class="fa-solid fa-house-user pe-2"></i>Pune</span>
+                  <span class="card-tags"><i class="fa-brands fa-paypal pe-2"></i>2 Opening</span>
+                  <span class="card-tags"><i class="fa-solid fa-user-graduate pe-2"></i>Post Graduate</span>
+                  <span class="card-tags"><i class="fa-solid fa-sun pe-2"></i>For Freshers </span>
+                </div>
+                <div class="col-3">
+
+                  <i class="fa-solid fa-house-user  txt-dark-blue fs-4"></i>
+                  <i class="fa-brands fa-paypal txt-dark-blue fs-4"></i>
+                  <i class="fa-solid fa-star-and-crescent txt-dark-blue fs-4"></i>
+                  <i class="fa-solid fa-venus txt-dark-blue fs-4"></i>
+
+                </div>
+              </div>
+              <div class="pt-1 ">
+                <button class="btn bg-Primary text-light card-btn mx-1">Apply Now</button>
+                <button class="btn bg-Primary text-light card-btn mx-1">Save for Later</button>
+              </div>
+            </div>
+            <div class="col-lg pt-lg-0 pb-2 d-flex justify-content-center align-items-center">
+              <h6 class="m-0 me-5  "> <span class="text-success rounded-circle "><i class="fa-solid fa-circle"></i>
+                </span> Actively recruiting</h6>
+              <i class="fa-solid fa-share-nodes fa-lg txt-dark-blue"></i>
+            </div>
+          </div>
+        </div>
+        <div class="">
+          <div class="card job-card">
+            <div class="card-header bg-Primary d-flex align-items-center justify-content-between">
+
+              <h5 class="m-0 text-white">Python Developer
+              </h5>
+              <p class="  m-0 text-white">50,000/- to 80,000/-</p>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Aptological pvt.ltd</h5>
+              <div class="row justify-content-between">
+                <div class="col-9 d-flex flex-wrap justify-content-start">
+                  <span class="card-tags"><i class="fa-solid fa-house-user pe-2"></i>Pune</span>
+                  <span class="card-tags"><i class="fa-brands fa-paypal pe-2"></i>2 Opening</span>
+                  <span class="card-tags"><i class="fa-solid fa-user-graduate pe-2"></i>Post Graduate</span>
+                  <span class="card-tags"><i class="fa-solid fa-sun pe-2"></i>For Freshers </span>
+                </div>
+                <div class="col-3">
+
+                  <i class="fa-solid fa-house-user  txt-dark-blue fs-4"></i>
+                  <i class="fa-brands fa-paypal txt-dark-blue fs-4"></i>
+                  <i class="fa-solid fa-star-and-crescent txt-dark-blue fs-4"></i>
+                  <i class="fa-solid fa-venus txt-dark-blue fs-4"></i>
+
+                </div>
+              </div>
+              <div class="pt-1 ">
+                <button class="btn bg-Primary text-light card-btn mx-1">Apply Now</button>
+                <button class="btn bg-Primary text-light card-btn mx-1">Save for Later</button>
+              </div>
+            </div>
+            <div class="col-lg pt-lg-0 pb-2 d-flex justify-content-center align-items-center">
+              <h6 class="m-0 me-5  "> <span class="text-success rounded-circle "><i class="fa-solid fa-circle"></i>
+                </span> Actively recruiting</h6>
+              <i class="fa-solid fa-share-nodes fa-lg txt-dark-blue"></i>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+
+    </section>
+    <section>
+
+      <button class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#Add-Job-Post">Post</button>
+
+
+
+      <div class="modal fade" id="Add-Job-Post" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+        tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header bg-Primary">
+              <h4 class="modal-title fs-5 txt-light" id="exampleModalToggleLabel">Step-1 : Type of job</h4>
+              <button type="button" class="btn-close " data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+
+              <form>
+               <div class="row">
+                <div class="mb-3 col-sm-12 col-md-6" >
+                  <label   class="form-label" required palceholder="Enter company name" >Company</label>
+                  <input type="text" class="form-control" >
+                </div>
+                <div class="mb-3 col-sm-12 col-md-6">
+                  <label  required class="form-label" placeholder="Enter job title">Job Title</label>
+                  <input type="text" class="form-control" >
+                </div>
+                <div class="mb-3 col-sm-12 col-md-6">
+                  <label  required class="form-label" placeholde="Enter Location">Location</label>
+                  <input type="text" class="form-control" >
+                </div>
+                <div class="mb-3 col-sm-12 col-md-6">
+                  <label  required class="form-label">Job function </label>
+                  <input type="text" class="form-control" >
+                </div>
+                <div class="mb-3 col-sm-12 col-md-6">
+                  <label  required class="form-label">Employment type </label>
+                  <input type="text" class="form-control" >
+                </div>
+                <div class="mb-3 col-sm-12 col-md-6">
+                  <label  required class="form-label">Experience </label>
+                  <input type="text" class="form-control" >
+                </div>
+                <div class="mb-3 col-sm-12 col-md-6">
+                  <label  required class="form-label">Job description </label>
+                  <input type="text" class="form-control" >
+                </div>
+                
+               </div>
+              </form>
+
+
+
+
+
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Next <i
+                  class="fa-solid fa-angles-right"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2"
+        tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Step-2 : Skills Required</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body ">
+              <form>
+                <div class="container">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                    <label class="form-check-label" for="defaultCheck1">
+                      Communication skills
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                    <label class="form-check-label" for="defaultCheck1">
+                      Computer skills
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                    <label class="form-check-label" for="defaultCheck1">
+                      Management skills
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                    <label class="form-check-label" for="defaultCheck1">
+                      Problem-solving skills
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                    <label class="form-check-label" for="defaultCheck1">
+                      Organizational skills
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                    <label class="form-check-label" for="defaultCheck1">
+                      Leadership skills 
+                    </label>
+                  </div>
+                
+                  
+                
+        
+                  
+                 
+                </div>
+               </form>
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-primary" data-bs-target="#Add-Job-Post" data-bs-toggle="modal">Back to
+                first</button>
+              <button class="btn btn-primary" data-bs-target="#exampleModalToggle3" data-bs-toggle="modal">Next <i
+                  class="fa-solid fa-angles-right"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="modal fade" id="exampleModalToggle3" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2"
+        tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Step-3 : Type of job</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              Hide this modal and show the first with the button below.
+            </div>
+            <div class="modal-footer">
+                           
+              <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Back to
+                second</button>
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal" >Submit</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </section>
+  </header>
+
+
+
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+
+
+
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+    integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+
+  <script src="js/owl.carousel.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+
+  <script>
+    $(document).ready(function () {
+      $('#owl-all').owlCarousel({
+        loop: true,
+        margin: 10,
+        responsiveClass: true,
+        dots: false,
+
+
+
+        responsive: {
+          0: {
+            items: 1,
+
+          },
+          768: {
+            items: 2,
+
+          },
+          992: {
+            items: 2,
+
+            loop: false
+          }
+        }
+      })
+
+      $('.owl-last').owlCarousel({
+        loop: true,
+        margin: 10,
+        responsiveClass: true,
+        dots: false,
+
+
+
+        responsive: {
+          0: {
+            items: 1,
+
+          },
+          768: {
+            items: 2,
+
+          },
+          992: {
+            items: 3,
+
+            loop: false
+          }
+        }
+      })
+
+      
+    });
+  </script>
+</body>
+
+</html>
